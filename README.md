@@ -26,13 +26,14 @@ Hardcoding database credentials is a major security vulnerability. This project 
 
 ### 2. Database Configuration
 Run the following SQL script in your MySQL environment to set up the necessary schema:
-```sql
-CREATE DATABASE IF NOT EXISTS AttendanceDB;
-USE AttendanceDB;
 
-CREATE TABLE Students (
-    RollNumber INT PRIMARY KEY,
-    Name VARCHAR(100) NOT NULL
-);
 
--- Add your other CREATE TABLE statements here (Subjects, Attendance, etc.)
+
+
+
+## 🔮 Future Enhancements
+While the current system handles core CRUD operations and secure data storage, future iterations are planned to expand its analytical capabilities:
+* **Data Exportation:** Implement functionality to export MySQL attendance records to `.csv` formats for easy integration with Python/Pandas data pipelines.
+* **Attendance Analytics:** Build out a reporting module to calculate monthly attendance percentages and identify chronic absenteeism trends.
+* **Automated Alerts:** Design a trigger system to flag students whose attendance drops below the required college threshold.
+
